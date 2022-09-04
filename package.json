@@ -1,0 +1,25 @@
+{
+  "name": "communalcare",
+  "version": "1.0.0",
+  "description": "**[production website](LINK HERE) | [trello](https://trello.com/invite/b/Sm4ThAvO/7c9596bd5ad7858fbdfc4015dc7560dd/communal-care) |  [linkedin](https://www.linkedin.com/in/ysherap/)**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-sherap/communalcare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/y-sherap/communalcare/issues"
+  },
+  "homepage": "https://github.com/y-sherap/communalcare#readme",
+  "dependencies": {
+    "pg": "^8.8.0",
+    "sequelize": "^6.21.4"
+  }
+}
+
