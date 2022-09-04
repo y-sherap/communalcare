@@ -4,7 +4,9 @@
   "description": "**[production website](LINK HERE) | [trello](https://trello.com/invite/b/Sm4ThAvO/7c9596bd5ad7858fbdfc4015dc7560dd/communal-care) |  [linkedin](https://www.linkedin.com/in/ysherap/)**",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +20,10 @@
   },
   "homepage": "https://github.com/y-sherap/communalcare#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
     "pg": "^8.8.0",
     "sequelize": "^6.21.4"
   }
 }
-
