@@ -18,6 +18,7 @@ Built with the intention of fostering cooperation and solidarity, communalcare a
 * Sequelize
 * PostGreSQL
 * Node.JS
+* JSON Web Token
 * Javascript
 * HTML5
 * CSS
