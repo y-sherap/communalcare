@@ -35,7 +35,7 @@ Built with the intention of fostering cooperation and solidarity, communalcare a
 
 ##### *entity relationship diagram*
 
-![ERD](images/communcalcare_ERD_screenshot.png)
+![ERD](public/erd_communalcare.png)
 
 
 ##### *component hierarchy diagram*
