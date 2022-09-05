@@ -8,7 +8,13 @@ Router.post('/:user_id',
   middleware.stripToken,
   middleware.verifyToken,
   controller.createOffer)
-Router.put('/:offer_id',controller.updateOffer)
-Router.delete('/:offer_id',controller.deleteOffer)
+Router.put('/:offer_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.updateOffer)
+Router.delete('/:offer_id',
+  middleware.stripToken,
+  middleware.verifyToken,  
+  controller.deleteOffer)
 
 module.exports = Router
