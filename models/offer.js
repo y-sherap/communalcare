@@ -12,9 +12,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Offer.belongsTo(models.User, { foreignKey: 'userId' })    }
     }
-  }
   Offer.init({
-    userID: {
+    userId: {
       type: DataTypes.INTEGER,
       onDelete: 'CASCADE',
       references: {
@@ -36,4 +35,4 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'offers'
   });
   return Offer;
-};
+}

@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       Request.belongsTo(models.User, { foreignKey: 'userId' })    }
   }
   Request.init({
-    userID: {
+    userId: {
       type: DataTypes.INTEGER,
       onDelete: 'CASCADE',
       references: {
