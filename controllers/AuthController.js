@@ -36,14 +36,7 @@ const Register = async (req, res) => {
   }
 }
 
-// const CheckSession = async (req, res) => {
-//   console.log(res.locals)
-//   const { payload } = res.locals
-//   res.send(payload)
-// }
-
 module.exports = {
   Login,
   Register,
-  // CheckSession
 }
