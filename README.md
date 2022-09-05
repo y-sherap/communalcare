@@ -40,7 +40,7 @@ Built with the intention of fostering cooperation and solidarity, communalcare a
 
 ##### *component hierarchy diagram*
 
-![CHD](images/communalcare_CHD.png)
+![CHD](public/chd_communalcare.png)
 
 
 ---
