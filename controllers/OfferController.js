@@ -19,6 +19,43 @@ const getOfferByUser = async (req, res) => {
   }
 }
 
+    // const getSingleOffer = async (req, res) => {
+    //   try {
+    //     let offerId = parseInt(req.params.offer_id)
+    //     let offer = await Offer.findOne({
+    //       where: { id: offerId }
+    //     })
+    //     res.send(offer)
+    //   } catch (error) {
+    //     throw error
+    //   }
+    // }
+
+    // const getSingleOffer = async (req, res) => {
+    //     try {
+    //       const offer = await Offer.findByPk(req.params.user_id, {
+    //         include: [
+    //           {
+    //             model: User
+    //           },
+    //         ],
+    //       })
+    //       res.send({ offer })
+    //     } catch (error) {
+    //       throw error
+    //     }
+    //   }
+    const getSingleOffer = async (req, res) => {
+      try {
+        let offerId = parseInt(req.params.offer_id)
+        let offerBody = await Offer.findOne({ where: { id: offerId } })
+        res.send(offerBody)
+      } catch (error) {
+        throw error
+      }
+    }
+
+
 const createOffer = async (req, res) => {
   try {
     let userId = req.params.user_id
@@ -64,4 +101,5 @@ module.exports = {
   createOffer,
   updateOffer,
   deleteOffer,
+  getSingleOffer
 }

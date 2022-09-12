@@ -21,9 +21,10 @@ const getRequestByUser = async (req, res) => {
 
 const createRequest = async (req, res) => {
   try {
-    let userId = req.params.user_id
+    console.log(req.body)
+    let userId = parseInt(req.params.user_id)
     let requestBody = {
-      userId,
+      userId:userId,
       ...req.body
     }
     let request = await Request.create(requestBody)

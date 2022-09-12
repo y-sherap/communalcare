@@ -3,7 +3,10 @@ const controller = require('../controllers/RequestController')
 const middleware = require('../middleware')
 
 Router.get('/get_all',controller.getAllRequests)
-Router.get('/:user_id',controller.getRequestByUser)
+Router.get('/:user_id',
+  middleware.stripToken,
+  middleware.verifyToken,
+  controller.getRequestByUser)
 Router.post('/:user_id',
   middleware.stripToken,
   middleware.verifyToken,
